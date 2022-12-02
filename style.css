@@ -1,0 +1,41 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin: 150px 200px 200px 100px;
+}
+.box {
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 200px;
+   height: 400px;
+   padding: 5px;
+}
+h4 {
+    color:gray;
+}
+span {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+}
+@media (max-width: 600px) {
+    .container {
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    }
+}
